@@ -17,6 +17,7 @@ import { FormularioComponent } from './components/lista-productos/formulario/for
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RelojComponent } from './components/reloj/reloj.component';
 
 
 @NgModule({
