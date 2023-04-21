@@ -22,12 +22,6 @@ describe('FooterComponent', () => {
   });
 });
 
-    // Tests de que puede ser instanciado sin errores
-    it("test_footer_component_instantiation", () => {
-      const footer = new FooterComponent();
-      expect(footer).toBeDefined();
-  });
-
       // Tests de que el componente Footer se renderiza sin errores.
       it("test_footer_component_renders_without_errors", () => {
         const footerComponent = new FooterComponent();
