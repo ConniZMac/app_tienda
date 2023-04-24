@@ -10,6 +10,7 @@ import { Productos } from 'src/app/services/productos';
 export class HomeComponent implements OnInit{
 
   @Input() productos : Productos[] = [];
+ 
 
     constructor(private productoService: ListaProductosService){}
 
@@ -24,7 +25,12 @@ export class HomeComponent implements OnInit{
           console.log(this.productos);
         }
       )
-  
     }
+
+    addToCart(producto: Productos) {
+      return this.productoService.addProductos(producto);
+    }
+
+    
 
 }

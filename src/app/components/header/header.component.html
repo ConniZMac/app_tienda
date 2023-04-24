@@ -32,7 +32,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLink="lista-productos">Lista de Productos</a>
-                  </li>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary m-2" [routerLink]="['/profile']" *ngIf="isAuthenticated">Perfil</a>
+                </li>
             </ul>
 
 
@@ -55,7 +58,7 @@
             </div>
 
         </div>
-        <button type="button " class="btn btn-cart btn-primary position-relative">
+        <button type="button " class="btn btn-cart btn-primary position-relative" [routerLink]="['/carrito']" *ngIf="isAuthenticated">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
                 viewBox="0 0 16 16">
                 <path
